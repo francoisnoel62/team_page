@@ -18,19 +18,17 @@ a {
 }
 
 /* COLORS */
-
 :root {
     --dark: #000000;
     --light-grey: #A9A9A9;
 }
 
 /*FULL SCREEN*/
-
 body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 10vh 13vw 2vh 12vw;
+    padding: 10vh 12vw 2vh 12vw;
     min-height: 100vh;
 }
 
@@ -89,19 +87,51 @@ img {
     padding: 6vw 5vh;
 }
 
-.main > *
-{
+.main > * {
     display: flex;
+    color: var(--dark);
+    font-style: normal;
+}
+
+.main > div > div:last-child {
+    margin-left: 0.5vw;
 }
 
 .title {
     writing-mode: tb-rl;
     text-transform: uppercase;
+    font-family: 'PT Serif', serif;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.name {
+    font-family: 'Poppins', serif;
+    font-weight: 600;
+    line-height: 27px;
 }
 
 footer {
     align-self: center;
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: var(--light-grey);
 }
+
+footer > p > a {
+    color: var(--light-grey);
+    font-weight: bold;
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
+}
+
 
 @media screen and (max-width: 768px){
     .header {
@@ -140,17 +170,38 @@ footer {
     .name {
         font-size: 14px;
     }
-
 }
 
-@media screen and (max-width: 382px) {
+@media screen and (min-width: 685px) {
+    .main > div:nth-child(2),
+    .main > div:nth-child(5)
+    {
+        margin-top: 10vh;
+    }
+}
+
+@media screen and (max-width: 684px) {
+    .main > div:nth-last-of-type(odd) {
+        margin-top: 10vh;
+    }
+}
+
+@media screen and (max-width: 395px) {
     .main {
         gap: 0;
         justify-content: space-evenly;
     }
 
+    .main > * {
+        padding-top: 4vh;
+    }
+
     img {
         min-width: 100px;
+    }
+
+    .main > div:nth-last-of-type(odd) {
+        margin-top: 10vh;
     }
     
 }
