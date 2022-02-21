@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 /* RESET */
 * {
@@ -28,17 +30,50 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 10vh 15vw 2vh 14vw;
+    padding: 10vh 13vw 2vh 12vw;
     min-height: 100vh;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+header {
+    margin-right: 3vw;
+}
+
+header > h1 {
+    font-family: 'PT Serif', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.045em;
+    color: var(--dark);
 }
 
 .presentation_txt {
-    width: 50%;
+    width: 38%;
+    font-style: normal;
+    font-size: 18px;
+    color: var(--dark);
+    line-height: 27px;
+    margin-left: 3vw;
+}
+
+.presentation_txt > h3 {
+    font-family: 'Poppins', serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 1.5vh;
+}
+
+.presentation_txt > span {
+    font-family: 'Poppins', serif;
+    font-weight: normal;
 }
 
 img {
@@ -49,21 +84,73 @@ img {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 8vw;
-    padding: 3vw;
+    justify-content: space-between;
+    gap: 5vw;
+    padding: 6vw 5vh;
 }
 
-.product_owner {
+.main > *
+{
     display: flex;
-    flex-direction: row;
 }
 
-#title {
+.title {
     writing-mode: tb-rl;
     text-transform: uppercase;
 }
 
 footer {
     align-self: center;
+}
+
+@media screen and (max-width: 768px){
+    .header {
+        flex-direction: column;
+    }
+
+    body {
+        padding-right: 2vw;
+        padding-left: 3vw;
+    }
+
+    .presentation_txt {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 5vh;
+    }
+
+    .main {
+        padding: 7vh 3vw;
+        gap: 10vw;
+        justify-content: space-around;
+    }
+
+    .presentation_txt > span {
+        font-size: 14px;
+    }
+
+    img {
+        min-width: 138px;
+    }
+
+    .title {
+        font-size: 10px;
+    }
+
+    .name {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 382px) {
+    .main {
+        gap: 0;
+        justify-content: space-evenly;
+    }
+
+    img {
+        min-width: 100px;
+    }
+    
 }
