@@ -7,7 +7,7 @@
 
 
 <div>
-👉🏻 See the actual <a href="https://tender-stonebraker-dc8a2f.netlify.app/">demo</a>  in live !
+👉🏻 See the actual <a href="https://tender-stonebraker-dc8a2f.netlify.app/" target="_blank">demo</a>  in live !
 </div>
 
 
