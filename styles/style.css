@@ -83,7 +83,7 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 5vw;
+    gap: 4vw;
     padding: 6vw 5vh;
 }
 
@@ -159,16 +159,16 @@ footer > p > a:hover {
         font-size: 14px;
     }
 
-    img {
-        min-width: 138px;
-    }
-
     .title {
         font-size: 10px;
     }
 
     .name {
         font-size: 14px;
+    }
+
+    img {
+        min-width: 25vw;
     }
 }
 
@@ -180,13 +180,9 @@ footer > p > a:hover {
     }
 }
 
-@media screen and (max-width: 684px) {
-    .main > div:nth-last-of-type(odd) {
-        margin-top: 10vh;
-    }
-}
 
-@media screen and (max-width: 395px) {
+
+@media screen and (max-width: 684px) {
     .main {
         gap: 0;
         justify-content: space-evenly;
@@ -197,7 +193,7 @@ footer > p > a:hover {
     }
 
     img {
-        min-width: 100px;
+        min-width: 35vw;
     }
 
     .main > div:nth-last-of-type(odd) {
