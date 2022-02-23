@@ -132,8 +132,15 @@ footer > p > a:hover {
     text-decoration: underline;
 }
 
+.main > div:nth-child(2),
+.main > div:nth-child(5)
+{
+    margin-top: 10vh;
+}
 
-@media screen and (max-width: 768px){
+
+
+@media screen and (max-width: 900px){
     .header {
         flex-direction: column;
     }
@@ -170,34 +177,14 @@ footer > p > a:hover {
     img {
         min-width: 25vw;
     }
-}
 
-@media screen and (min-width: 685px) {
     .main > div:nth-child(2),
     .main > div:nth-child(5)
     {
-        margin-top: 10vh;
-    }
-}
-
-
-
-@media screen and (max-width: 684px) {
-    .main {
-        gap: 0;
-        justify-content: space-evenly;
-    }
-
-    .main > * {
-        padding-top: 4vh;
-    }
-
-    img {
-        min-width: 35vw;
+        margin-top: 0;
     }
 
     .main > div:nth-last-of-type(odd) {
         margin-top: 10vh;
     }
-    
 }
